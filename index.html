@@ -221,8 +221,8 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Welcome to Peek Solutions</h1> 
-  <p>Pipeline integrity solutions for the energy industry.</p> 
+  <h1>Peek Solutions</h1> 
+  <p>Pipeline integrity solutions for the energy industry</p> 
   <!-- <form class="form-inline">
     <input type="email" class="form-control" size="50" placeholder="Email Address" required>
     <button type="button" class="btn btn-danger">Subscribe</button>
@@ -369,26 +369,33 @@
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Leersum, The Netherlands</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +31 624272619</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Av. St. Andreu 116, 08392 St. Andreu de Llavaneres, Spain</p>
+      <!-- <p><span class="glyphicon glyphicon-phone"></span> +31 624272619</p> -->
+      <p><span class="glyphicon glyphicon-earphone"></span> +34 937927406</p>
       <p><span class="glyphicon glyphicon-envelope"></span> <a href=mailto:ralf@peek.solutions>ralf@peek.solutions</a></p>
     </div>
+    
+    <form id="contactform" action="//formspree.io/kurt.peek@gmail.com" method="POST">
     <div class="col-sm-7 slideanim">
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
           <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div>
     </div>
+    <input type="hidden" name="_next" value="//peek.solutions/confirmation.html" />
+    <input type="text" name="_gotcha" style="display:none" /> 	
+    </form>
+    
   </div>
 </div>
 
@@ -398,7 +405,7 @@
 <!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBimnrhiugaGSNN8WnsjpzMNJcrH_T60GI"></script>
 <script>
-var myCenter = new google.maps.LatLng(52.010938, 5.437853);
+var myCenter = new google.maps.LatLng(41.561585, 2.494817);
 
 function initialize() {
 var mapProp = {
