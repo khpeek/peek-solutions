@@ -5,41 +5,24 @@
   <title>Peek Solutions</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+  <!-- Favicon from https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-  <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="stylesheets/peek-solutions.css">
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body>
 
-<!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">Peek Solutions</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
-
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-between">
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark justify-content-between">
   <a class="navbar-brand" href="#">Peek Solutions</a>
   <div class="navbar-nav justify-content-end">
     <a class="nav-item nav-link" href="#about">About</a>
@@ -48,25 +31,36 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Peek Solutions</h1>
-  <p>Pipeline integrity solutions for the energy industry</p>
+<div class="jumbotron jumbotron-fluid bg-dark text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="img/peek-solutions-blue.svg">
+      </div>
+      <div class="col-sm-9">
+        <h1 class="display-4">Peek Solutions</h1>
+        <p class="lead">Pipeline Design, Operational Integrity Assessment, and Support Solutions</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
-    <div class="col-sm-7">
+    <div class="col-sm-6">
       <h2>About us</h2><br>
-<!--              <img src="img/ZRB_buckle_trigger_resized_30_percent.jpg" style="float:right"></img>-->
       <h4>Peek Solutions, an independent consulting company founded by Ralf Peek, provides pipeline integrity solutions and assurance support to the energy industry, including the application of structural reliability methods to assess and ensure integrity.</h4><br>
       <br>
-      <!-- <button class="btn btn-default btn-lg">Get in Touch</button> -->
-      <a href="#contact" class="btn btn-default btn-lg" role="button">Get in touch</a>
+      <a href="#contact" class="btn btn-outline-dark btn-lg" role="button">Get in Touch</a>
     </div>
-    <div class="col-sm-5">
-      <img src="img/ZRB_buckle_trigger_resized_30_percent.jpg" style="width:100%"></img><br>
-      A zero-radius bend (ZRB) trigger that was installed for Sarawak Shell Berhad's B12 pipeline. (From <a href="http://ascelibrary.org/doi/abs/10.1061/%28ASCE%29TE.1943-5436.0000076">Peek & Kristiansen (2009)</a>).
+    <div class="col-sm-6">
+      <div class="row">
+        <img src="img/ZRB_buckle_trigger_resized_30_percent.jpg"></img><br>
+      </div>
+      <div class="row">
+        A zero-radius bend (ZRB) trigger that was installed for Sarawak Shell Berhad's B12 pipeline. (From <a href="http://ascelibrary.org/doi/abs/10.1061/%28ASCE%29TE.1943-5436.0000076">Peek & Kristiansen (2009)</a>).
+      </div>
     </div>
   </div>
 </div>
@@ -241,7 +235,16 @@
   <!-- <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p> -->
 </footer>
 
-<script src="js/scroll.js"></script>
+<!-- <script src="js/scroll.js"></script> -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<!-- Custom JS -->
+<script src="js/scroll2.js"></script>
 
 </body>
 </html>
