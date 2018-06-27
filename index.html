@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="node_modules/@mdi/font/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="stylesheets/peek-solutions.css">
 </head>
 <body>
@@ -71,7 +72,7 @@
 
   <div id="accordion">
 
-    <div class="card">
+    <div class="card border-bottom-0">
       <div class="card-header" id="headingOne">
         <h5 class="mb-0">
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -87,7 +88,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card border-bottom-0">
       <div class="card-header" id="headingTwo">
         <h5 class="mb-0">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -123,7 +124,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card border-bottom-0">
       <div class="card-header" id="headingThree">
         <h5 class="mb-0">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -141,7 +142,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card border-bottom-0">
       <div class="card-header" id="headingFour">
         <h5 class="mb-0">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -162,7 +163,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card border-bottom-0">
       <div class="card-header" id="headingFive">
         <h5 class="mb-0">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -202,10 +203,21 @@
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you as soon as possible.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Av. St. Andreu 116, 08392 St. Andreu de Llavaneres, Spain</p>
-      <!-- <p><span class="glyphicon glyphicon-phone"></span> +31 624272619</p> -->
-      <p><span class="glyphicon glyphicon-earphone"></span> +34 937927406</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> <a href=mailto:ralf@peek.solutions>ralf@peek.solutions</a></p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <i class="mdi mdi-map-marker"></i>
+          <div>Av. St. Andreu 116, 08392 St. Andreu de Llavaneres, Spain</div>
+        </li>
+        <li class="list-group-item">
+          <i class="mdi mdi-phone"></i>
+          <div>+34 937927406<div>
+        </li>
+        <li class="list-group-item">
+          <i class="mdi mdi-email"></i>
+          <div><a href=mailto:ralf@peek.solutions>ralf@peek.solutions</a><div>
+        </li>
+      </ul>
+
     </div>
 
     <form id="contactform" action="//formspree.io/ralf@peek.solutions" method="POST">
