@@ -13,18 +13,3 @@ $(document).on('click', 'a[href^="#"]', function (event) {
       }
     });
 });
-
-$(window).on('scroll', function() {
-    var scrollTop = $(this).scrollTop();
-
-    $('[data-section]').each(function() {
-        var topDistance = $(this).offset().top-100;
-
-        if ( (topDistance) < scrollTop ) {
-                 console.log(typeof 'href=#'+$(this).attr('id'));
-                  $('a[href^="#"]').removeClass('active');
-                 var id = $(this).attr('id');
-                 $("[href='#"+id+"']").addClass('active') ;
-        }
-    });
-});

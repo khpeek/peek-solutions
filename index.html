@@ -21,7 +21,7 @@
   <link href="node_modules/@mdi/font/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="stylesheets/peek-solutions.css">
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark justify-content-between">
   <a class="navbar-brand" href="#">Peek Solutions</a>
@@ -219,8 +219,8 @@
       </ul>
     </div>
 
-    <form id="contactform" action="//formspree.io/ralf@peek.solutions" method="POST">
-    <div class="col-sm-7 slideanim">
+    <div class="col-sm-7">
+      <form id="contactform" action="//formspree.io/ralf@peek.solutions" method="POST">
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -232,13 +232,13 @@
       <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button type="submit" class="btn btn-outline-dark float-right">Submit</button>
         </div>
       </div>
+      <input type="hidden" name="_next" value="//peek.solutions/confirmation.html" />
+      <input type="text" name="_gotcha" style="display:none" />
+      </form>
     </div>
-    <input type="hidden" name="_next" value="//peek.solutions/confirmation.html" />
-    <input type="text" name="_gotcha" style="display:none" />
-    </form>
 
   </div>
 </div>
