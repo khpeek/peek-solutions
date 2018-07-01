@@ -38,6 +38,16 @@ h4 {
 .container-fluid {
     padding: 60px 50px;
 }
+
+#accordion {
+  text-align: left;
+}
+
+/* #accordion .mdi {
+  font-size: 1.5rem;
+} */
+
+
 .bg-grey {
     background-color: #f6f6f6;
 }
@@ -186,5 +196,3 @@ footer .glyphicon {
       font-size: 150px;
   }
 }
-
-#accordion {text-align: left};
