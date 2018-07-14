@@ -10,25 +10,30 @@ $(document).ready(function(){
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      // The optional number (400) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
+        scrollTop: $(hash).offset().top - parseInt($(hash).css('padding-top'))
+      }, 400, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        // window.location.hash = hash;
+        if (history.pushState) {
+          history.pushState(null, null, hash);
+        } else {
+          location.hash = hash;
+        }
       });
     } // End if
   });
 
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
+  // $(window).scroll(function() {
+  //   $(".slideanim").each(function(){
+  //     var pos = $(this).offset().top;
+  //
+  //     var winTop = $(window).scrollTop();
+  //       if (pos < winTop + 600) {
+  //         $(this).addClass("slide");
+  //       }
+  //   });
+  // });
 })
