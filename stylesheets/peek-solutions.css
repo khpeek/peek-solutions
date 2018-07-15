@@ -43,10 +43,14 @@ h4 {
   text-align: left;
 }
 
-/* #accordion .mdi {
-  font-size: 1.5rem;
-} */
+img.pdf-icon {
+  width: 120px;
+}
 
+.card-body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 .logo-small {
     color: #050042;
