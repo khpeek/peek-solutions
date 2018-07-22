@@ -44,7 +44,18 @@ h4 {
 }
 
 img.pdf-icon {
-  width: 100px;
+  width: 80px;
+}
+
+.card-header {
+  /* Reduce padding slightly from Bootstrap's default of 0.75rem */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.lead {
+  /* Reduce font size slightly from Bootstrap's default of 1.25rem */
+  font-size: 1.15rem;
 }
 
 .card-body {
