@@ -47,6 +47,11 @@ img.pdf-icon {
   width: 80px;
 }
 
+img#email_sent {
+  width: 400px;
+  height: auto;
+}
+
 .card-header {
   /* Reduce padding slightly from Bootstrap's default of 0.75rem */
   padding-top: 0.5rem;
