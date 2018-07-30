@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  var activeAccordionGroup = sessionStorage.getItem('activeAccordionGroup');
+  if (activeAccordionGroup != null) {
+    // $('#accordion-publications .collapse.show').collapse('hide');
+    // $('#' + activeAccordionGroup).collapse('show');
+    $('accordion-publications .collapse.show').removeClass('show');
+    $('#' + activeAccordionGroup).addClass('show');
+  }
+
   // Add up/down chevron icons to accordion, similar to https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html
   function toggleChevron(e) {
     $(e.target)
@@ -23,4 +31,9 @@ $(document).ready(function(){
       $(this).find('i.mdi').addClass('text-muted');
     }
   );
+
+  $('#accordion-publications').on('shown.bs.collapse', function(event) {
+    var active = $(event.target).attr('id');
+    sessionStorage.setItem('activeAccordionGroup', active);
+  });
 });
