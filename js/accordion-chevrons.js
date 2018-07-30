@@ -14,4 +14,13 @@ $(document).ready(function(){
   // Publications section
   $('#accordion-publications').on('hide.bs.collapse', toggleChevron);
   $('#accordion-publications').on('show.bs.collapse', toggleChevron);
+
+  $('.card-header button').hover(
+    function() {
+      $(this).find('i.mdi').removeClass('text-muted');
+    },
+    function() {
+      $(this).find('i.mdi').addClass('text-muted');
+    }
+  );
 });
