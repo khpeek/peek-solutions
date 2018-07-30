@@ -239,7 +239,20 @@
       </div>
       <div id="collapseOnePublications" class="collapse show" aria-labelledby="headingOnePublications" data-parent="#accordion-publications">
         <div class="card-body d-flex">
-          <p class="text-justify mb-0">This was originally developed at the University of Michigan in Ann Arbor with funding from the US National Science Foundation, with special capabilities for challenging structural stability problems.  It was further developed at Shell for pipeline problems involving reeling, upheaval buckling, lateral buckling, and was also used to establish forming limits for down-hole tubular expansion, as required to achieve a mono-diameter well.</p>
+          <div>
+            <p class="text-justify">
+              This was originally developed at the University of Michigan
+              in Ann Arbor with funding from the US National Science Foundation, with special capabilities for
+              challenging structural stability problems (1987-95). It was further developed at Shell for pipeline
+              problems involving reeling, upheaval buckling, lateral buckling, and was also used to establish forming
+              limits for down-hole tubular expansion, as required to achieve a mono-diameter well (1995-2016).
+            </p>
+            <p class="text-justify mb-0">
+              The document available for download is not intended as full documentation and user manual for the
+              program, but it does include references to published documents with specific applications of NPEX, as
+              well as the source code, and 32-bit and 64-bit executable versions of NPEX running under windows.
+            </p>
+          </div>
           <a href="publications/SR.16.12288_NPEX_FEA_Program_Release.pdf"><img src="img/pdf.svg" class="pdf-icon pl-3"></a>
         </div>
       </div>
@@ -258,7 +271,7 @@
       </div>
       <div id="collapseTwoPublications" class="collapse" aria-labelledby="headingTwoPublications" data-parent="#accordion-publications">
         <div class="card-body d-flex">
-          <p class="text-justify mb-0">The effect of concrete coating on strain concentration in pipes, accounting for limited bond strength between the pipeline and the weight coating.  Npex implementation, and testing of the method by Verley and Ness for this.  (This allows this concrete to be included in simulations of lateral buckling, or ice gouging over a buried pipeline, for instance).</p>
+          <p class="text-justify mb-0">The effect of concrete coating on strain concentration in pipes, accounting for limited bond strength between the pipeline and the weight coating.  NPEX implementation, and testing of the method by Verley and Ness for this.  (This allows this concrete to be included in simulations of lateral buckling, or ice gouging over a buried pipeline, for instance).</p>
           <a href="publications/EP2006-5161.pdf"><img src="img/pdf.svg" class="pdf-icon pl-3"></a>
         </div>
       </div>
@@ -296,7 +309,7 @@
       </div>
       <div id="collapseFourPublications" class="collapse" aria-labelledby="headingFourPublications" data-parent="#accordion-publications">
         <div class="card-body d-flex">
-          <p class="text-justify mb-0">Analytical Solutions for Pipeline Walking developed in 2002 for loading by the most severe conceivable loading, consisting of a sudden surge in temperature that propagates down the line.  (These solutions were developed before those of the Safebuck JIP, and were available to the Safebuck JIP, but could not be referenced in those days).  They also include solutions for the maximum restraint force to stop walking, and the optimum location of the restraint.  However, they are based on idealized, and extreme conditions.  Whereas they help in developing a feel for the problem, for practical applications, it is recommended to use numerical methods, accounting for more realistic temperature histories, as well as other effects such as possible interactions between pipeline walking and lateral buckling). </p>
+          <p class="text-justify mb-0">Analytical Solutions for Pipeline Walking developed in 2002 for loading by the most severe conceivable loading, consisting of a sudden surge in temperature that propagates down the line.  (These solutions were developed before those of the Safebuck JIP, and were available to the Safebuck JIP, but could not be referenced in those days).  They also include solutions for the maximum restraint force to stop walking and the optimum location of the restraint.  However, they are based on idealized, and extreme conditions.  Whereas they help in developing a feel for the problem, for practical applications, it is recommended to use numerical methods, accounting for more realistic temperature histories, as well as other effects such as possible interactions between pipeline walking and lateral buckling). </p>
           <a href="publications/OP-02-30011.pdf"><img src="img/pdf.svg" class="pdf-icon pl-3"></a>
         </div>
       </div>
@@ -315,8 +328,30 @@
       </div>
       <div id="collapseFivePublications" class="collapse" aria-labelledby="headingFivePublications" data-parent="#accordion-publications">
         <div class="card-body d-flex">
-          <p class="text-justify mb-0">Program for smoothing of survey data describing the Out-Of-Straightness (OOS) of a pipeline profile for upheaval buckling assessments.  This calculates the best fit structural profile, where a structural profile is any profile that can be achieved by an initially-straight, linearly elastic pipe under downward forces which are limited to the gravity loads on the pipe, and upward forces which can be anything anywhere.  (For upheaval buckling assessments SMOOP has been used as a pre-processor, followed by NPEX to perform the upheaval buckling assessment accounting for non-linearity due to inelastic behavior of the steel, and pipe-soil interaction.  This program was developed around the year 2000 when it took hours to run on the PCs of those days, but it is a matter of minutes or even seconds now. Furthermore, the latest version enables a multi-grid approach, that can make the solution process more computationally efficient).</p>
+          <p class="text-justify mb-0">Program for smoothing of survey data describing the Out-Of-Straightness (OOS) of a pipeline profile for upheaval buckling assessments.  This calculates the best fit structural profile, where a structural profile is any profile that can be achieved by an initially-straight, linearly elastic pipe under downward forces which are limited to the gravity loads on the pipe, and upward forces which can be anything anywhere.  (For upheaval buckling assessments SMOOP has been used as a pre-processor, followed by NPEX to perform the upheaval buckling assessment accounting for non-linearity due to the inelastic behavior of the steel, and pipe-soil interaction.  This program was developed around the year 2000 when it took hours to run on the PCs of those days, but it is a matter of minutes or even seconds now. Furthermore, the latest version enables a multi-grid approach, that can make the solution process more computationally efficient).</p>
           <a href="publications/16.12427.pdf"><img src="img/pdf.svg" class="pdf-icon pl-3"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header bg-light" id="headingSixPublications">
+        <h5 class="mb-0">
+          <button class="btn btn-light w-100 text-left d-flex justify-content-between collapsed" data-toggle="collapse" data-target="#collapseSixPublications" aria-expanded="true" aria-controls="collapseSixPublications">
+            <p class="lead mb-0">
+              Upheaval Buckling of Reeled Flowlines
+            </p>
+            <i class="mdi mdi-chevron-down lead text-muted"></i>
+          </button>
+        </h5>
+      </div>
+      <div id="collapseSixPublications" class="collapse" aria-labelledby="headingSixPublications" data-parent="#accordion-publications">
+        <div class="card-body d-flex">
+          <p class="text-justify mb-0">
+            This paper on the effect of reeling and infill under a pipe on upheaval buckling was presented and distributed at
+            OMAE 1998 in Lisbon, but not included in the conference proceedings.
+          </p>
+          <a href="publications/SR.12.12579_Upheaval_buckling_of_reeled_flowlines.pdf"><img src="img/pdf.svg" class="pdf-icon pl-3"></a>
         </div>
       </div>
     </div>
